@@ -65,7 +65,7 @@ features = ["std"]
 assert_fs = "1.0"
 
 [package.metadata.deb]
-name = "i3status-rust"
+name = "i3status-rs"
 maintainer = "Aaron Jacobs <atheriel@gmail.com>"
 extended-description = """\
 Provides provides a way to display 'blocks' of system information (time, \
