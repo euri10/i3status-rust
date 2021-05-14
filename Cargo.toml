@@ -89,4 +89,3 @@ assets = [
     ["files/icons", "~/.local/share/i3status-rust/icons", "644"],
     ["files/themes", "~/.local/share/i3status-rust/themes", "644"],
 ]
-changelog = "debian/changelog"
