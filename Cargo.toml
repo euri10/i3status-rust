@@ -82,6 +82,6 @@ priority = "optional"
 assets = [
     ["target/release/i3status-rs", "usr/bin/", "755"],
     ["README.md", "usr/share/doc/i3status-rust/README", "644"],
-    ["files/icons", "~/.local/share/i3status-rust/icons", "644"],
-    ["files/themes", "~/.local/share/i3status-rust/themes", "644"],
+    ["files/icons/", "~/.local/share/i3status-rust/icons/", "644"],
+    ["files/themes/", "~/.local/share/i3status-rust/themes/", "644"],
 ]
