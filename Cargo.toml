@@ -81,8 +81,8 @@ section = "utils"
 priority = "optional"
 assets = [
     ["target/release/i3status-rs", "usr/bin/", "755"],
-    ["README.md", "usr/share/doc/i3status-rust/README", "644"],
-    ["doc/blocks.md", "usr/share/doc/i3status-rust/blocks.md", "644"],
-    ["files/icons/*", "~/.local/share/i3status-rust/icons/", "644"],
-    ["files/themes/*", "~/.local/share/i3status-rust/themes/", "644"],
+    ["README.md", "usr/share/doc/i3status-rs/README", "644"],
+    ["doc/blocks.md", "usr/share/doc/i3status-rs/blocks.md", "644"],
+    ["files/icons/*", "usr/share/i3status-rs/icons/", "644"],
+    ["files/themes/*", "usr/share/i3status-rs/themes/", "644"],
 ]
