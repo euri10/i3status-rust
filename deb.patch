@@ -14,6 +14,6 @@ section = "utils"
 priority = "optional"
 assets = [
     ["target/release/i3status-rs", "usr/bin/i3status-rs", "755"],
-    ["files/icons/*", "usr/share/i3status-rs/icons", "644"],
-    ["files/themes/*", "usr/share/i3status-rs/themes", "644"],
+    ["files/icons/*", "usr/share/i3status-rust/icons", "644"],
+    ["files/themes/*", "usr/share/i3status-rust/themes", "644"],
 ]
