@@ -7,7 +7,7 @@ battery status, volume, etc) on the i3 (https://i3wm.org/) bar.
 Also compatible with Sway (http://swaywm.org/).
 .
 For a list of available blocks, see the block documentation in \
-usr/share/doc/i3status-rust/blocks.md."""
+usr/share/doc/i3status-rs/blocks.md."""
 license-file = ["LICENSE", "0"]
 depends = "$auto, libdbus-1-3 (>=1.6), libpulse0"
 section = "utils"
