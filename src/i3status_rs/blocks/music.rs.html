@@ -1,6 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/blocks/music.rs`."><title>music.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../static.files/SourceSerif4-Regular-46f98efaafac5295.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../static.files/FiraSans-Regular-018c141bf0843ffd.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../static.files/FiraSans-Medium-8f9a781e4970d388.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../static.files/SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../static.files/SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2"><link rel="stylesheet" href="../../../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../../../static.files/rustdoc-5bc39a1768837dd0.css"><meta name="rustdoc-vars" data-root-path="../../../" data-static-root-path="../../../static.files/" data-current-crate="i3status_rs" data-themes="" data-resource-suffix="" data-rustdoc-version="1.77.2 (25ef9e3d8 2024-04-09)" data-channel="1.77.2" data-search-js="search-dd67cee4cfa65049.js" data-settings-js="settings-4313503d2e1961c2.js" ><script src="../../../static.files/storage-4c98445ec4002617.js"></script><script defer src="../../../static.files/src-script-e66d777a5a92e9b2.js"></script><script defer src="../../../src-files.js"></script><script defer src="../../../static.files/main-48f368f3872407c8.js"></script><noscript><link rel="stylesheet" href="../../../static.files/noscript-04d5337699b92874.css"></noscript><link rel="alternate icon" type="image/png" href="../../../static.files/favicon-16x16-8b506e7a72182f1c.png"><link rel="alternate icon" type="image/png" href="../../../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../../../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc src"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="src-sidebar-title">
-            <h2>Files</h2></div></nav><div class="sidebar-resizer"></div>
-    <main><nav class="sub"><form class="search-form"><span></span><div id="sidebar-button" tabindex="-1"><a href="../../../i3status_rs/all.html" title="show sidebar"></a></div><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" tabindex="-1"><a href="../../../help.html" title="help">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../static.files/wheel-7b819b6101059cd0.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><div data-nosnippet><pre class="src-line-numbers"><a href="#1" id="1">1</a>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/blocks/music.rs`."><title>music.rs - source</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../../../static.files/rustdoc-46132b98.css"><meta name="rustdoc-vars" data-root-path="../../../" data-static-root-path="../../../static.files/" data-current-crate="i3status_rs" data-themes="" data-resource-suffix="" data-rustdoc-version="1.85.0 (4d91de4e4 2025-02-17)" data-channel="1.85.0" data-search-js="search-75f5ac3e.js" data-settings-js="settings-0f613d39.js" ><script src="../../../static.files/storage-59e33391.js"></script><script defer src="../../../static.files/src-script-56102188.js"></script><script defer src="../../../src-files.js"></script><script defer src="../../../static.files/main-5f194d8c.js"></script><noscript><link rel="stylesheet" href="../../../static.files/noscript-893ab5e7.css"></noscript><link rel="alternate icon" type="image/png" href="../../../static.files/favicon-32x32-6580c154.png"><link rel="icon" type="image/svg+xml" href="../../../static.files/favicon-044be391.svg"></head><body class="rustdoc src"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="src-sidebar-title"><h2>Files</h2></div></nav><div class="sidebar-resizer"></div><main><rustdoc-search></rustdoc-search><section id="main-content" class="content"><div class="main-heading"><h1><div class="sub-heading">i3status_rs/blocks/</div>music.rs</h1><rustdoc-toolbar></rustdoc-toolbar></div><div class="example-wrap"><div data-nosnippet><pre class="src-line-numbers">
+<a href="#1" id="1">1</a>
 <a href="#2" id="2">2</a>
 <a href="#3" id="3">3</a>
 <a href="#4" id="4">4</a>
@@ -696,7 +695,12 @@
 <a href="#694" id="694">694</a>
 <a href="#695" id="695">695</a>
 <a href="#696" id="696">696</a>
-</pre></div><pre class="rust"><code><span class="doccomment">//! The current song title and artist
+<a href="#697" id="697">697</a>
+<a href="#698" id="698">698</a>
+<a href="#699" id="699">699</a>
+<a href="#700" id="700">700</a>
+<a href="#701" id="701">701</a>
+<a href="#702" id="702">702</a></pre></div><pre class="rust"><code><span class="doccomment">//! The current song title and artist
 //!
 //! Also provides buttons for play/pause, previous and next.
 //!
@@ -718,7 +722,7 @@
 //! ----|--------|--------
 //! `format` | A string to customise the output of this block. See below for available placeholders. | &lt;code&gt;\" $icon {$combo.str(max_w:25,rot_interval:0.5) $play \|}\"&lt;/code&gt;
 //! `format_alt` | If set, block will switch between `format` and `format_alt` on every click | `None`
-//! `player` | Name(s) of the music player(s) MPRIS interface. This can be either a music player name or an array of music player names. Run &lt;code&gt;busctl --user list \| grep "org.mpris.MediaPlayer2." \| cut -d' ' -f1&lt;/code&gt; and the name is the part after "org.mpris.MediaPlayer2.". | `None`
+//! `player` | Name(s) of the music player(s) MPRIS interface. This can be either a music player name or an array of music player names. Run &lt;code&gt;busctl \--user list \| grep \"org.mpris.MediaPlayer2.\" \| cut -d\' \' -f1&lt;/code&gt; and the name is the part after "org.mpris.MediaPlayer2.". | `None`
 //! `interface_name_exclude` | A list of regex patterns for player MPRIS interface names to ignore. | `["playerctld"]`
 //! `separator` | String to insert between artist and title. | `" - "`
 //! `seek_step_secs` | Positive number of seconds to seek forward/backward when scrolling on the bar. Does not need to be an integer. | `1`
@@ -744,11 +748,17 @@
 //! `volume_icon` | Icon based on volume. Missing if unsupported.    | Icon
 //! `volume`      | Current volume. Missing if muted or unsupported. | Number
 //!
+//! Widget           | Placeholder
+//! -----------------|-------------
+//! `play_pause_btn` | `$play`
+//! `next_btn`       | `$next`
+//! `prev_btn`       | `$prev`
+//!
 //! Action          | Default button
 //! ----------------|------------------
-//! `play_pause`    | Left on `$play`
-//! `next`          | Left on `$next`
-//! `prev`          | Left on `$prev`
+//! `play_pause`    | Left on `play_pause_btn`
+//! `next`          | Left on `next_btn`
+//! `prev`          | Left on `prev_btn`
 //! `next_player`   | Right
 //! `seek_forward`  | Wheel Up
 //! `seek_backward` | Wheel Down
@@ -916,7 +926,7 @@
         <span class="prelude-val">Ok</span>(Value::icon(icon.to_string()).with_instance(instance))
     };
 
-    <span class="kw">let </span>values = <span class="macro">map! </span>{
+    <span class="kw">let </span>values = <span class="macro">map!</span> {
         <span class="string">"icon" </span>=&gt; Value::icon(<span class="string">"music"</span>),
         <span class="string">"next" </span>=&gt; new_btn(<span class="string">"music_next"</span>, NEXT_BTN)<span class="question-mark">?</span>,
         <span class="string">"prev" </span>=&gt; new_btn(<span class="string">"music_prev"</span>, PREV_BTN)<span class="question-mark">?</span>,
@@ -965,7 +975,7 @@
 
     <span class="kw">let </span><span class="kw-2">mut </span>properties_stream = MessageStream::for_match_rule(
         MatchRule::builder()
-            .msg_type(zbus::MessageType::Signal)
+            .msg_type(zbus::message::Type::Signal)
             .interface(<span class="string">"org.freedesktop.DBus.Properties"</span>)
             .and_then(|x| x.member(<span class="string">"PropertiesChanged"</span>))
             .and_then(|x| x.path(<span class="string">"/org/mpris/MediaPlayer2"</span>))
@@ -979,7 +989,7 @@
 
     <span class="kw">let </span><span class="kw-2">mut </span>name_owner_changed_stream = MessageStream::for_match_rule(
         MatchRule::builder()
-            .msg_type(zbus::MessageType::Signal)
+            .msg_type(zbus::message::Type::Signal)
             .interface(<span class="string">"org.freedesktop.DBus"</span>)
             .and_then(|x| x.member(<span class="string">"NameOwnerChanged"</span>))
             .and_then(|x| x.arg0ns(<span class="string">"org.mpris.MediaPlayer2"</span>))
@@ -1068,7 +1078,7 @@
         }
 
         <span class="kw">loop </span>{
-            <span class="macro">select! </span>{
+            <span class="macro">select!</span> {
                 <span class="prelude-val">Some</span>(msg) = properties_stream.next() =&gt; {
                     <span class="kw">let </span>msg = msg.unwrap();
                     <span class="kw">let </span>msg = PropertiesChanged::from_message(msg).unwrap();

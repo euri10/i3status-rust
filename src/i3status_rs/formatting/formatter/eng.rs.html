@@ -1,6 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/formatting/formatter/eng.rs`."><title>eng.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/SourceSerif4-Regular-46f98efaafac5295.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/FiraSans-Regular-018c141bf0843ffd.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/FiraSans-Medium-8f9a781e4970d388.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2"><link rel="stylesheet" href="../../../../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../../../../static.files/rustdoc-5bc39a1768837dd0.css"><meta name="rustdoc-vars" data-root-path="../../../../" data-static-root-path="../../../../static.files/" data-current-crate="i3status_rs" data-themes="" data-resource-suffix="" data-rustdoc-version="1.77.2 (25ef9e3d8 2024-04-09)" data-channel="1.77.2" data-search-js="search-dd67cee4cfa65049.js" data-settings-js="settings-4313503d2e1961c2.js" ><script src="../../../../static.files/storage-4c98445ec4002617.js"></script><script defer src="../../../../static.files/src-script-e66d777a5a92e9b2.js"></script><script defer src="../../../../src-files.js"></script><script defer src="../../../../static.files/main-48f368f3872407c8.js"></script><noscript><link rel="stylesheet" href="../../../../static.files/noscript-04d5337699b92874.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../static.files/favicon-16x16-8b506e7a72182f1c.png"><link rel="alternate icon" type="image/png" href="../../../../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../../../../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc src"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="src-sidebar-title">
-            <h2>Files</h2></div></nav><div class="sidebar-resizer"></div>
-    <main><nav class="sub"><form class="search-form"><span></span><div id="sidebar-button" tabindex="-1"><a href="../../../../i3status_rs/all.html" title="show sidebar"></a></div><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" tabindex="-1"><a href="../../../../help.html" title="help">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../static.files/wheel-7b819b6101059cd0.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><div data-nosnippet><pre class="src-line-numbers"><a href="#1" id="1">1</a>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/formatting/formatter/eng.rs`."><title>eng.rs - source</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../../../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../../../../static.files/rustdoc-46132b98.css"><meta name="rustdoc-vars" data-root-path="../../../../" data-static-root-path="../../../../static.files/" data-current-crate="i3status_rs" data-themes="" data-resource-suffix="" data-rustdoc-version="1.85.0 (4d91de4e4 2025-02-17)" data-channel="1.85.0" data-search-js="search-75f5ac3e.js" data-settings-js="settings-0f613d39.js" ><script src="../../../../static.files/storage-59e33391.js"></script><script defer src="../../../../static.files/src-script-56102188.js"></script><script defer src="../../../../src-files.js"></script><script defer src="../../../../static.files/main-5f194d8c.js"></script><noscript><link rel="stylesheet" href="../../../../static.files/noscript-893ab5e7.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../static.files/favicon-32x32-6580c154.png"><link rel="icon" type="image/svg+xml" href="../../../../static.files/favicon-044be391.svg"></head><body class="rustdoc src"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="src-sidebar-title"><h2>Files</h2></div></nav><div class="sidebar-resizer"></div><main><rustdoc-search></rustdoc-search><section id="main-content" class="content"><div class="main-heading"><h1><div class="sub-heading">i3status_rs/formatting/formatter/</div>eng.rs</h1><rustdoc-toolbar></rustdoc-toolbar></div><div class="example-wrap"><div data-nosnippet><pre class="src-line-numbers">
+<a href="#1" id="1">1</a>
 <a href="#2" id="2">2</a>
 <a href="#3" id="3">3</a>
 <a href="#4" id="4">4</a>
@@ -301,19 +300,18 @@
 <a href="#299" id="299">299</a>
 <a href="#300" id="300">300</a>
 <a href="#301" id="301">301</a>
-</pre></div><pre class="rust"><code><span class="kw">use </span><span class="kw">crate</span>::formatting::prefix::Prefix;
+<a href="#302" id="302">302</a></pre></div><pre class="rust"><code><span class="kw">use </span><span class="kw">crate</span>::formatting::prefix::Prefix;
 <span class="kw">use </span><span class="kw">crate</span>::formatting::unit::Unit;
 
 <span class="kw">use </span>std::borrow::Cow;
+<span class="kw">use </span>std::ops::RangeInclusive;
 
 <span class="kw">use super</span>::<span class="kw-2">*</span>;
 
-<span class="kw">type </span>PadWith = Cow&lt;<span class="lifetime">'static</span>, str&gt;;
-
 <span class="kw">const </span>DEFAULT_NUMBER_WIDTH: usize = <span class="number">2</span>;
-<span class="kw">const </span>DEFAULT_NUMBER_PAD_WITH: PadWith = Cow::Borrowed(<span class="string">" "</span>);
 
 <span class="kw">pub const </span>DEFAULT_NUMBER_FORMATTER: EngFormatter = EngFormatter {
+    show: <span class="bool-val">true</span>,
     width: DEFAULT_NUMBER_WIDTH,
     unit: <span class="prelude-val">None</span>,
     unit_has_space: <span class="bool-val">false</span>,
@@ -323,10 +321,12 @@
     prefix_hidden: <span class="bool-val">false</span>,
     prefix_forced: <span class="bool-val">false</span>,
     pad_with: DEFAULT_NUMBER_PAD_WITH,
+    range: f64::NEG_INFINITY..=f64::INFINITY,
 };
 
 <span class="attr">#[derive(Debug)]
 </span><span class="kw">pub struct </span>EngFormatter {
+    show: bool,
     width: usize,
     unit: <span class="prelude-ty">Option</span>&lt;Unit&gt;,
     unit_has_space: bool,
@@ -336,6 +336,7 @@
     prefix_hidden: bool,
     prefix_forced: bool,
     pad_with: PadWith,
+    range: RangeInclusive&lt;f64&gt;,
 }
 
 <span class="kw">impl </span>EngFormatter {
@@ -345,57 +346,56 @@
         <span class="kw">for </span>arg <span class="kw">in </span>args {
             <span class="kw">match </span>arg.key {
                 <span class="string">"width" </span>| <span class="string">"w" </span>=&gt; {
-                    result.width = arg.val.parse().error(<span class="string">"Width must be a positive integer"</span>)<span class="question-mark">?</span>;
+                    result.width = arg.parse_value()<span class="question-mark">?</span>;
                 }
                 <span class="string">"unit" </span>| <span class="string">"u" </span>=&gt; {
-                    result.unit = <span class="prelude-val">Some</span>(arg.val.parse()<span class="question-mark">?</span>);
+                    result.unit = <span class="prelude-val">Some</span>(arg.parse_value()<span class="question-mark">?</span>);
                 }
                 <span class="string">"hide_unit" </span>=&gt; {
-                    result.unit_hidden = arg
-                        .val
-                        .parse()
-                        .ok()
-                        .error(<span class="string">"hide_unit must be true or false"</span>)<span class="question-mark">?</span>;
+                    result.unit_hidden = arg.parse_value()<span class="question-mark">?</span>;
                 }
                 <span class="string">"unit_space" </span>=&gt; {
-                    result.unit_has_space = arg
-                        .val
-                        .parse()
-                        .ok()
-                        .error(<span class="string">"unit_space must be true or false"</span>)<span class="question-mark">?</span>;
+                    result.unit_has_space = arg.parse_value()<span class="question-mark">?</span>;
                 }
                 <span class="string">"prefix" </span>| <span class="string">"p" </span>=&gt; {
-                    result.prefix = <span class="prelude-val">Some</span>(arg.val.parse()<span class="question-mark">?</span>);
+                    result.prefix = <span class="prelude-val">Some</span>(arg.parse_value()<span class="question-mark">?</span>);
                 }
                 <span class="string">"hide_prefix" </span>=&gt; {
-                    result.prefix_hidden = arg
-                        .val
-                        .parse()
-                        .ok()
-                        .error(<span class="string">"hide_prefix must be true or false"</span>)<span class="question-mark">?</span>;
+                    result.prefix_hidden = arg.parse_value()<span class="question-mark">?</span>;
                 }
                 <span class="string">"prefix_space" </span>=&gt; {
-                    result.prefix_has_space = arg
-                        .val
-                        .parse()
-                        .ok()
-                        .error(<span class="string">"prefix_space must be true or false"</span>)<span class="question-mark">?</span>;
+                    result.prefix_has_space = arg.parse_value()<span class="question-mark">?</span>;
                 }
                 <span class="string">"force_prefix" </span>=&gt; {
-                    result.prefix_forced = arg
-                        .val
-                        .parse()
-                        .ok()
-                        .error(<span class="string">"force_prefix must be true or false"</span>)<span class="question-mark">?</span>;
+                    result.prefix_forced = arg.parse_value()<span class="question-mark">?</span>;
                 }
                 <span class="string">"pad_with" </span>=&gt; {
-                    <span class="kw">if </span>arg.val.graphemes(<span class="bool-val">true</span>).count() &lt; <span class="number">2 </span>{
-                        result.pad_with = Cow::Owned(arg.val.into());
+                    <span class="kw">let </span>pad_with_str = arg.val.error(<span class="string">"pad_with must be specified"</span>)<span class="question-mark">?</span>;
+                    <span class="kw">if </span>pad_with_str.graphemes(<span class="bool-val">true</span>).count() &lt; <span class="number">2 </span>{
+                        result.pad_with = Cow::Owned(pad_with_str.into());
                     } <span class="kw">else </span>{
                         <span class="kw">return </span><span class="prelude-val">Err</span>(Error::new(
                             <span class="string">"pad_with must be an empty string or a single character"</span>,
                         ));
                     }
+                }
+                <span class="string">"range" </span>=&gt; {
+                    <span class="kw">let </span>(start, end) = arg
+                        .val
+                        .error(<span class="string">"range must be specified"</span>)<span class="question-mark">?
+                        </span>.split_once(<span class="string">".."</span>)
+                        .error(<span class="string">"invalid range"</span>)<span class="question-mark">?</span>;
+                    <span class="kw">if </span>!start.is_empty() {
+                        result.range = start.parse::&lt;f64&gt;().error(<span class="string">"invalid range start"</span>)<span class="question-mark">?
+                            </span>..=<span class="kw-2">*</span>result.range.end();
+                    }
+                    <span class="kw">if </span>!end.is_empty() {
+                        result.range = <span class="kw-2">*</span>result.range.start()
+                            ..=end.parse::&lt;f64&gt;().error(<span class="string">"invalid range end"</span>)<span class="question-mark">?</span>;
+                    }
+                }
+                <span class="string">"show" </span>=&gt; {
+                    result.show = arg.parse_value()<span class="question-mark">?</span>;
                 }
                 other =&gt; {
                     <span class="kw">return </span><span class="prelude-val">Err</span>(Error::new(<span class="macro">format!</span>(<span class="string">"Unknown argument for 'eng': '{other}'"</span>)));
@@ -410,7 +410,15 @@
 <span class="kw">impl </span>Formatter <span class="kw">for </span>EngFormatter {
     <span class="kw">fn </span>format(<span class="kw-2">&amp;</span><span class="self">self</span>, val: <span class="kw-2">&amp;</span>Value, _config: <span class="kw-2">&amp;</span>SharedConfig) -&gt; <span class="prelude-ty">Result</span>&lt;String, FormatError&gt; {
         <span class="kw">match </span>val {
-            Value::Number { <span class="kw-2">mut </span>val, <span class="kw-2">mut </span>unit } =&gt; {
+            <span class="kw-2">&amp;</span>Value::Number { <span class="kw-2">mut </span>val, <span class="kw-2">mut </span>unit } =&gt; {
+                <span class="kw">if </span>!<span class="self">self</span>.range.contains(<span class="kw-2">&amp;</span>val) {
+                    <span class="kw">return </span><span class="prelude-val">Err</span>(FormatError::NumberOutOfRange(val));
+                }
+
+                <span class="kw">if </span>!<span class="self">self</span>.show {
+                    <span class="kw">return </span><span class="prelude-val">Ok</span>(String::new());
+                }
+
                 <span class="kw">let </span>is_negative = val.is_sign_negative();
                 <span class="kw">if </span>is_negative {
                     val = -val;
@@ -484,17 +492,9 @@
 </span><span class="kw">mod </span>tests {
     <span class="kw">use super</span>::<span class="kw-2">*</span>;
 
-    <span class="macro">macro_rules! </span>fmt {
-        (<span class="macro-nonterminal">$name</span>:ident, $(<span class="macro-nonterminal">$key</span>:ident : <span class="macro-nonterminal">$value</span>:tt),<span class="kw-2">*</span>) =&gt; {
-            new_formatter(<span class="macro">stringify!</span>(<span class="macro-nonterminal">$name</span>), <span class="kw-2">&amp;</span>[
-                $( Arg { key: <span class="macro">stringify!</span>(<span class="macro-nonterminal">$key</span>), val: <span class="macro">stringify!</span>(<span class="macro-nonterminal">$value</span>) } ),*
-            ]).unwrap()
-        };
-    }
-
     <span class="attr">#[test]
     </span><span class="kw">fn </span>eng_rounding_and_negatives() {
-        <span class="kw">let </span>fmt = <span class="macro">fmt!</span>(eng, w: <span class="number">3</span>);
+        <span class="kw">let </span>fmt = <span class="macro">new_fmt!</span>(eng, w: <span class="number">3</span>).unwrap();
         <span class="kw">let </span>config = SharedConfig::default();
 
         <span class="kw">let </span>result = fmt
@@ -563,7 +563,7 @@
             .unwrap();
         <span class="macro">assert_eq!</span>(result, <span class="string">" 10"</span>);
 
-        <span class="kw">let </span>fmt = <span class="macro">fmt!</span>(eng, w: <span class="number">5</span>, p: <span class="number">1</span>);
+        <span class="kw">let </span>fmt = <span class="macro">new_fmt!</span>(eng, w: <span class="number">5</span>, p: <span class="number">1</span>).unwrap();
         <span class="kw">let </span>result = fmt
             .format(
                 <span class="kw-2">&amp;</span>Value::Number {
@@ -585,19 +585,19 @@
             unit: Unit::Bytes,
         };
 
-        <span class="kw">let </span>fmt = <span class="macro">fmt!</span>(eng, w: <span class="number">5</span>, p: Mi);
+        <span class="kw">let </span>fmt = <span class="macro">new_fmt!</span>(eng, w: <span class="number">5</span>, p: Mi).unwrap();
         <span class="kw">let </span>result = fmt.format(<span class="kw-2">&amp;</span>val, <span class="kw-2">&amp;</span>config).unwrap();
         <span class="macro">assert_eq!</span>(result, <span class="string">"14.96GiB"</span>);
 
-        <span class="kw">let </span>fmt = <span class="macro">fmt!</span>(eng, w: <span class="number">4</span>, p: Mi);
+        <span class="kw">let </span>fmt = <span class="macro">new_fmt!</span>(eng, w: <span class="number">4</span>, p: Mi).unwrap();
         <span class="kw">let </span>result = fmt.format(<span class="kw-2">&amp;</span>val, <span class="kw-2">&amp;</span>config).unwrap();
         <span class="macro">assert_eq!</span>(result, <span class="string">"15.0GiB"</span>);
 
-        <span class="kw">let </span>fmt = <span class="macro">fmt!</span>(eng, w: <span class="number">3</span>, p: Mi);
+        <span class="kw">let </span>fmt = <span class="macro">new_fmt!</span>(eng, w: <span class="number">3</span>, p: Mi).unwrap();
         <span class="kw">let </span>result = fmt.format(<span class="kw-2">&amp;</span>val, <span class="kw-2">&amp;</span>config).unwrap();
         <span class="macro">assert_eq!</span>(result, <span class="string">" 15GiB"</span>);
 
-        <span class="kw">let </span>fmt = <span class="macro">fmt!</span>(eng, w: <span class="number">2</span>, p: Mi);
+        <span class="kw">let </span>fmt = <span class="macro">new_fmt!</span>(eng, w: <span class="number">2</span>, p: Mi).unwrap();
         <span class="kw">let </span>result = fmt.format(<span class="kw-2">&amp;</span>val, <span class="kw-2">&amp;</span>config).unwrap();
         <span class="macro">assert_eq!</span>(result, <span class="string">"15GiB"</span>);
     }
